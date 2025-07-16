@@ -1,0 +1,36 @@
+# Get all songs
+GET http://localhost:3000/songs
+
+###
+
+# Get a song by ID
+GET http://localhost:3000/songs/1
+
+###
+
+# Create a new song
+POST http://localhost:3000/songs
+Content-Type: application/json
+
+{
+  "title": "Sapphire",
+  "artist": ["Ed-Sheeran", "Taylor Swift"],
+  "releasedDate": "2023-10-01",
+  "duration": "03:45"
+}
+
+###
+
+# Update a song
+PUT http://localhost:3000/songs/1
+Content-Type: application/json
+
+{
+  "title": "Updated Song",
+  "artist": "Updated Artist"
+}
+
+###
+
+# Delete a song
+DELETE http://localhost:3000/songs/1
